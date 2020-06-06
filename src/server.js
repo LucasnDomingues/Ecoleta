@@ -62,7 +62,6 @@ server.get('/search-results', (req,res) => {
             if(err){
                 return console.log(err);
             }
-            console.log(rows);
             return res.render("search-results.html", { places: rows, total: rows.length});
         });
     }
